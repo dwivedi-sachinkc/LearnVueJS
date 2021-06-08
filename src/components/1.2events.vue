@@ -5,7 +5,7 @@
     <p>get al data: {{ getAllData() }}</p>
     <p>get name: {{ getAllData().name }}</p>
     <p>get aaddress: {{ getAllData().address }}</p>
-    <button @click="getBtnData()">btn data</button>
+    <button @click="getBtnData">btn data</button>
     <p>{{ count }}</p>
   </div>
 </template>

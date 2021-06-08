@@ -15,7 +15,7 @@ export default {
   props: {},
   data() {
     return {
-      count: 0,
+      count: "",
     };
   },
   methods: {},

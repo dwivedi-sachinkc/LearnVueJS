@@ -4,7 +4,7 @@
     <br />
     <input type="password" v-model="password" />
     <br />
-    <button @click="getdata()">get the data</button>
+    <button @click="getdata">get the data</button>
   </div>
 </template>
 
@@ -14,8 +14,8 @@ export default {
   props: {},
   data() {
     return {
-      email: null,
-      password: null,
+      email: "Email here",
+      password: "Passord here",
     };
   },
   methods: {

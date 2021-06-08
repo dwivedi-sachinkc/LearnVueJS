@@ -5,7 +5,7 @@
       <li v-for="item in num" :key="item">{{ item }}</li>
     </ul>
     <ol>
-      <li v-for="todo in todos" :key="todo.name">
+      <li v-for="todo in todos" :key="todo.id">
         {{ todo.text }}
       </li>
     </ol>

@@ -14,6 +14,10 @@
   <vFor />
   <hr />
   <PToC />
+  <hr />
+  <HTMLBinding />
+  <hr />
+  <ClassLBinding />
 </template>
 
 <script>
@@ -24,7 +28,9 @@ import GetIPV from "./components/1.4getInputfieldValue.vue";
 import GetICBRV from "./components/1.5getCheckBxRadiobtnval.vue";
 import ifElse from "./components/1.6ifElse.vue";
 import vFor from "./components/1.7vFor.vue";
-import PToC from "./components/2.1parentToChild.vue";
+import PToC from "./components/2ParentToChild/parent.vue";
+import HTMLBinding from "./components/1.8htmlBinding.vue";
+import ClassLBinding from "./components/1.9classBinding.vue";
 
 export default {
   name: "App",
@@ -37,6 +43,8 @@ export default {
     ifElse,
     vFor,
     PToC,
+    HTMLBinding,
+    ClassLBinding,
   },
 
   data() {
