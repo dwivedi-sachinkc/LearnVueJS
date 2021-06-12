@@ -23,6 +23,8 @@
   <hr />
   <Student name="bhadwa" />
   <Dad />
+  <hr />
+  <Reference />
 </template>
 
 <script>
@@ -39,6 +41,7 @@ import ClassLBinding from "./components/1.9classBinding.vue";
 import Teacher from "./components/3propswithexmpl/teacher.vue";
 import Student from "./components/3propswithexmpl/student.vue";
 import Dad from "./components/4childtoparent/datainparent.vue";
+import Reference from "./components/5.1ref.vue";
 
 export default {
   name: "App",
@@ -56,6 +59,7 @@ export default {
     Teacher,
     Student,
     Dad,
+    Reference,
   },
   setup() {
     return {
