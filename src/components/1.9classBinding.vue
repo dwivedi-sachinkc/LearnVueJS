@@ -46,4 +46,8 @@ export default {
 .err {
   font: 20px sans-serif;
 }
+
+* {
+  display: none;
+}
 </style>

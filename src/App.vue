@@ -18,6 +18,11 @@
   <HTMLBinding />
   <hr />
   <ClassLBinding />
+  <hr />
+  <Teacher :name="teacherName" />
+  <hr />
+  <Student name="bhadwa" />
+  <Dad />
 </template>
 
 <script>
@@ -31,6 +36,9 @@ import vFor from "./components/1.7vFor.vue";
 import PToC from "./components/2ParentToChild/parent.vue";
 import HTMLBinding from "./components/1.8htmlBinding.vue";
 import ClassLBinding from "./components/1.9classBinding.vue";
+import Teacher from "./components/3propswithexmpl/teacher.vue";
+import Student from "./components/3propswithexmpl/student.vue";
+import Dad from "./components/4childtoparent/datainparent.vue";
 
 export default {
   name: "App",
@@ -45,10 +53,14 @@ export default {
     PToC,
     HTMLBinding,
     ClassLBinding,
+    Teacher,
+    Student,
+    Dad,
   },
-
-  data() {
-    return {};
+  setup() {
+    return {
+      name: "sacin",
+    };
   },
 };
 </script>

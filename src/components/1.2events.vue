@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Events</h3>
+    <h1>Events</h1>
     <p>Name: {{ getName("sddd") }}</p>
     <p>get al data: {{ getAllData() }}</p>
     <p>get name: {{ getAllData().name }}</p>
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  color: red;
+* {
+  display: none;
 }
 </style>

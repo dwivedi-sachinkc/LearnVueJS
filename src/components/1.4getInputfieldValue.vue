@@ -27,6 +27,7 @@ export default {
 </script>
 
 <style scoped>
-h1 {
+* {
+  display: none;
 }
 </style>
