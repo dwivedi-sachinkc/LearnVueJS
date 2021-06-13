@@ -1,4 +1,7 @@
 <template>
+  <ul>
+    <li v-for="item in error" :key="item">{{ item }} not valid</li>
+  </ul>
   <form>
     <label for="">Email</label>
     <input type="text" name="" id="" v-model="form.email" />
@@ -20,19 +23,26 @@
     <br />
     <h4>gender</h4>
     <label for="">Male</label>
-    <input type="checkbox" v-model="form.gender" value="M" />
-    <label for="">Female</label>
-    <input type="checkbox" v-model="form.gender" value="F" />
+    <input type="checkbox" v-model="form.gender" value="M" id="gender" />
+    <label for="">Femle</label>
+    <input type="checkbox" v-model="form.gender" value="F" id="gender" />
     <br /><br />
     <button type="button" @click="login">submit</button>
   </form>
-  <p>{{ form }}</p>
 </template>
 <script>
 export default {
   setup() {
     function login() {
-      console.warn("hehe", this.form);
+      for (const item in this.form) {
+        if (this.form[item] === "" || this.form[item].length === 0) {
+          this.error.push(item);
+        }
+      }
+      if (this.error.length === 0) {
+        alert("data submitted");
+      }
+      console.warn(this.form, this.error);
     }
     return {
       form: {
@@ -40,8 +50,9 @@ export default {
         password: "",
         country: "",
         technology: [],
-        gender: "",
+        gender: [],
       },
+      error: [],
       login,
     };
   },
