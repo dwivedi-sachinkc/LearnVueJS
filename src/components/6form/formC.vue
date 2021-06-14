@@ -58,3 +58,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+* {
+  display: none;
+}
+</style>

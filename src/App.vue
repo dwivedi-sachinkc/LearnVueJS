@@ -26,6 +26,7 @@
   <hr />
   <Reference />
   <Formm />
+  <Modif />
 </template>
 
 <script>
@@ -44,6 +45,7 @@ import Student from "./components/3propswithexmpl/student.vue";
 import Dad from "./components/4childtoparent/datainparent.vue";
 import Reference from "./components/5.1ref.vue";
 import Formm from "./components/6form/formC.vue";
+import Modif from "./components/5.2modifier.vue";
 
 export default {
   name: "App",
@@ -63,6 +65,7 @@ export default {
     Dad,
     Reference,
     Formm,
+    Modif,
   },
   setup() {
     return {
