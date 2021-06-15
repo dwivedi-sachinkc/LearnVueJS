@@ -1,15 +1,20 @@
 <template>
-  modifier
-  <input type="text" v-model="data" />
-  <h2>data is: {{ data }}</h2>
+  <div class="add">
+    <h3>Addition Calculator</h3>
+    <form id="sum">
+      <input type="text" class="form-control" v-model.lazy="data" />
+    </form>
+    <p>data is {{ data }}</p>
+  </div>
 </template>
 <script>
 export default {
-  name: "modif",
-  setup() {
+  name: "Add",
+  data() {
     return {
-      data: " ",
+      data: "",
     };
   },
+  methods: {},
 };
 </script>
