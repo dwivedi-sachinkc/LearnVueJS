@@ -27,6 +27,7 @@
   <Reference />
   <Formm />
   <Modif />
+  <Nonprops />
 </template>
 
 <script>
@@ -46,6 +47,7 @@ import Dad from "./components/4childtoparent/datainparent.vue";
 import Reference from "./components/5.1ref.vue";
 import Formm from "./components/6form/formC.vue";
 import Modif from "./components/5.2modifier.vue";
+import Nonprops from "./components/5.3nonprops.vue";
 
 export default {
   name: "App",
@@ -66,6 +68,7 @@ export default {
     Reference,
     Formm,
     Modif,
+    Nonprops,
   },
   setup() {
     return {

@@ -2,7 +2,7 @@
   <div class="add">
     <h3>Addition Calculator</h3>
     <form id="sum">
-      <input type="text" class="form-control" v-model.lazy="data" />
+      <input type="text" class="form-control" v-model="data" />
     </form>
     <p>data is {{ data }}</p>
   </div>
@@ -10,11 +10,16 @@
 <script>
 export default {
   name: "Add",
-  data() {
+  setup() {
     return {
-      data: "",
+      data: " ",
     };
   },
-  methods: {},
 };
 </script>
+
+<style scoped>
+* {
+  display: block;
+}
+</style>
