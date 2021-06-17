@@ -1,33 +1,23 @@
 <template>
   <Home />
-  <hr />
   <Event />
-  <hr />
   <Binding />
-  <hr />
   <GetIPV />
-  <hr />
   <GetICBRV />
-  <hr />
   <ifElse />
-  <hr />
   <vFor />
-  <hr />
   <PToC />
-  <hr />
   <HTMLBinding />
-  <hr />
   <ClassLBinding />
-  <hr />
   <Teacher :name="teacherName" />
-  <hr />
   <Student name="bhadwa" />
   <Dad />
-  <hr />
   <Reference />
   <Formm />
   <Modif />
   <Nonprops />
+  <Comp />
+  <Watchh />
 </template>
 
 <script>
@@ -47,7 +37,8 @@ import Dad from "./components/4childtoparent/datainparent.vue";
 import Reference from "./components/5.1ref.vue";
 import Formm from "./components/6form/formC.vue";
 import Modif from "./components/5.2modifier.vue";
-import Nonprops from "./components/5.3nonprops.vue";
+import Comp from "./components/6.2computed.vue";
+import Watchh from "./components/6.3watchers.vue";
 
 export default {
   name: "App",
@@ -68,7 +59,8 @@ export default {
     Reference,
     Formm,
     Modif,
-    Nonprops,
+    Comp,
+    Watchh,
   },
   setup() {
     return {
