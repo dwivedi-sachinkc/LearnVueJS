@@ -18,6 +18,8 @@
   <Nonprops />
   <Comp />
   <Watchh />
+  <Slotss />
+  <NamedSlot />
 </template>
 
 <script>
@@ -39,6 +41,8 @@ import Formm from "./components/6form/formC.vue";
 import Modif from "./components/5.2modifier.vue";
 import Comp from "./components/6.2computed.vue";
 import Watchh from "./components/6.3watchers.vue";
+import Slotss from "./components/6.4slotts/6.4slotss.vue";
+import NamedSlot from "./components/6.5namedslot/parent.vue";
 
 export default {
   name: "App",
@@ -61,6 +65,8 @@ export default {
     Modif,
     Comp,
     Watchh,
+    Slotss,
+    NamedSlot,
   },
   setup() {
     return {

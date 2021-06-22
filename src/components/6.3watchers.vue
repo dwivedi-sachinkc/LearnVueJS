@@ -1,5 +1,5 @@
 <template>
-  {{ count }}
+  <p>{{ count }}</p>
   <button @click="count = count + 1">plus</button>
   <button @click="count = count - 1">minus</button>
 </template>
@@ -17,3 +17,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+* {
+  display: none;
+}
+</style>
