@@ -38,6 +38,6 @@ export default {
 
 <style scoped>
 * {
-  display: block;
+  display: none;
 }
 </style>

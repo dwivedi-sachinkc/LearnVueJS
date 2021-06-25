@@ -16,3 +16,10 @@ export default {
   name: "child",
 };
 </script>
+
+
+<style scoped>
+  *{
+  display: none;
+  }
+</style>
