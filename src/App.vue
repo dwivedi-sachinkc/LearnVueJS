@@ -21,6 +21,7 @@
   <Slotss />
   <NamedSlot />
   <ApiCall/>
+  <SendApiData/>
 </template>
 
 <script>
@@ -45,6 +46,7 @@ import Watchh from "./components/6.3watchers.vue";
 import Slotss from "./components/6.4slotts/6.4slotss.vue";
 import NamedSlot from "./components/6.5namedslot/parent.vue";
 import ApiCall from './components/6.4apicall.vue'
+import SendApiData from './components/6.5sendapidata.vue'
 export default {
   name: "App",
   components: {
@@ -69,6 +71,7 @@ export default {
     Slotss,
     NamedSlot,
     ApiCall,
+    SendApiData,
   },
   setup() {
     return {

@@ -1,6 +1,6 @@
 <template>
     <p v-for="item in list" :key="item">
-    {{item.id}} --  {{item.email}}
+    {{item.id}} --  {{item.email}} - <img :src="item.avatar" alt="">
     </p>
 </template>
 
@@ -19,3 +19,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+*{
+    display: none;
+}
+</style>
